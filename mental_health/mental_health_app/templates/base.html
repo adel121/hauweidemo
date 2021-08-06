@@ -1,0 +1,31 @@
+{% load static %}
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="{% static 'mental_health_app/style.css'  %}">
+<div class="navv">
+<ul class="navv">
+  <li class="navv"><a class="navv" class="active"  href="{% url 'index' %}">Home</a></li>
+  <li class="navv"><a  class="navv" href="#community">Community</a></li>
+  <li class="navv"><a class="navv" href="#programs">Mental Health Programs</a></li>
+  <li class="navv" > <h6 style="color:white; text-decoration: underline;"> ATTENION: This is still an outline for presentation purposes, it misses most of the functionalities which are to be implemented later</h6></li>
+  <li class="navv" style="float:right"><a class="navv" href="#about">About</a></li>
+</ul>
+
+</div>
+
+<div style="text-align: center;" class="current">
+	<h1 style="margin-top: 100px; position: sticky; top: 100px;"> {% block current %}
+
+	{%  endblock %}</h1>
+
+</div>
+
+{% block content %}
+
+{% endblock %}
+
+<div class="foott">
+<ul class="foott">
+   <li class="foott"><a class="foott" class="active" style="background-color: red;"  href="#home">Call HotLine</a></li>
+  <li class="foott"><a  class="foott" href="#news">Connect To Samrt Watch</a></li>
+</ul>
+</div>

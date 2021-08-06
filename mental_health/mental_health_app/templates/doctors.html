@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block current %}
+<h1>Local Doctors</h1>
+{% endblock %}
+<hr><hr><hr>
+{% block content %} 
+{% for doctor in doctors %} 
+
+<div class="doctors_Con" >
+	<h1>{{doctor.username}}</h1>
+
+<div class="foott-doc">
+<ul class="foott-doc">
+   <li class="foott-doc"><a class="foott-doc" class="active" style="background-color: rgba(255, 0, 0, 0.4);"  href="#book">Book </a></li>
+  <li class="foott-doc"><a   style="background-color: rgba(100, 100, 100, 0.4);" class="foott-doc" href="#contact">Contact</a></li>
+</ul>
+
+</div></div>
+
+{% endfor %}
+{% endblock %}
